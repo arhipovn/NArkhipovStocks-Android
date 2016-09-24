@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">NArkhipovStocksFinal</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="alert_title">Stock Symbol is Missing</string>
+    <string name="alert_message">Please enter a stock symbol</string>
+    <string name="stock_details">Stock Details</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="minimum_percent_change">Minimum Percent Change</string>
+    <string name="percent_change">Percent Change</string>
+    <string name="preferences_title">Update Settings</string>
+    <string name="highlight">Highlight the Percent Change</string>
+    <string name="highlight_summary">Select to highlight the percent change with the color chosen below</string>
+    <string name="color">Color</string>
+    <string name="color_title">Color</string>
+
+
+    <string-array name="minimum_percent_change_options">
+        <item>0.01</item>
+        <item>0.05</item>
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.5</item>
+        <item>1.0</item>
+    </string-array>
+
+    <string-array name="percent_change_values">
+        <item>0.01</item>
+        <item>0.05</item>
+        <item>0.1</item>
+        <item>0.2</item>
+        <item>0.3</item>
+        <item>0.5</item>
+        <item>1.0</item>
+    </string-array>
+
+    <string-array name="color_values">
+        <item>#FF0000</item>
+        <item>#FF00FF</item>
+        <item>#00FF00</item>
+
+    </string-array>
+
+    <string-array name="color_options">
+        <item>Red</item>
+        <item>Pink</item>
+        <item>Lime</item>
+
+    </string-array>
+
+
+</resources>

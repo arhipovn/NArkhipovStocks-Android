@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/stockSymbolTv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:text="GOOG"
+        android:textStyle="bold"
+        android:textIsSelectable="false"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/separator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/companyTv"
+        android:text="GOOGLE"
+        android:layout_alignWithParentIfMissing="false"
+        android:textSize="7dp"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_below="@+id/stockSymbolTv"
+        android:layout_alignLeft="@+id/stockSymbolTv"
+        android:layout_alignStart="@+id/stockSymbolTv"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:text="New Text"
+        android:id="@+id/separator"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-2.08"
+        android:id="@+id/percentChangeTv"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/separator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="775.42"
+        android:id="@+id/lastTradePriceTv"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/yellow"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/text1"
+        android:layout_toStartOf="@+id/text1"
+        android:layout_alignBottom="@+id/separator" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.1"
+        android:id="@+id/changeTextView"
+        android:textColor="@color/yellow"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/lastTradePriceTv"
+        android:layout_toEndOf="@+id/lastTradePriceTv"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="45dp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="0.1"
+        android:dialogTitle="@string/percent_change"
+        android:entries="@array/minimum_percent_change_options"
+        android:entryValues="@array/percent_change_values"
+        android:key="PREF_MIN_PERCENTAGE"
+        android:summary="%s"
+        android:title="@string/minimum_percent_change" />
+
+    <PreferenceCategory
+        android:title="@string/preferences_title">
+
+    <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="PREF_SHOULD_BE_HIGHLIGHTED_OR_NOT"
+            android:summary="@string/highlight_summary"
+            android:title="@string/highlight" />
+
+       <ListPreference
+            android:defaultValue="#FF0000"
+            android:dialogTitle="@string/color"
+            android:entries="@array/color_options"
+            android:entryValues="@array/color_values"
+            android:key="PREF_COLOR"
+           android:summary="%s"
+
+           android:title="@string/color_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
+
+
